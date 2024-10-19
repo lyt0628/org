@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5c3b4757-5284-4264-b1b1-180df4d94be5
+:END:
+#+title: js-tool-pritter
+#+date: [2024-10-17 周四]
+#+last_modified:  
+

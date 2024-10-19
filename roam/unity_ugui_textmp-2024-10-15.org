@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6fbeef78-4f0a-4d58-a735-f5ed3db3aec3
+:END:
+#+title: unity-ugui-textmp
+#+date: [2024-10-15 周二]
+#+last_modified:  
+

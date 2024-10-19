@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       dfeb33ae-80dd-4e13-92e2-ae1dd1109c5a
+:END:
+#+title: unity-ugui-anim
+#+date: [2024-10-15 周二]
+#+last_modified:  
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       113c2764-7fce-4934-bf37-f16d4ee70a52
+:END:
+#+title: unity-shader-prop
+#+date: [2024-10-18 周五]
+#+last_modified:  
+

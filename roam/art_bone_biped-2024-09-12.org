@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       2dcc6d70-8a9a-43a2-8bf8-065e91d13b32
 :END:
-#+title: art-bone-biped
+#+title: art-3d-bone-biped
 #+date: [2024-09-12 周四]
 #+last_modified:  
 
