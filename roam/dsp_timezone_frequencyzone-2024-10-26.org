@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a582abe1-924e-49b4-be18-0e03aaaaf7fa
+:END:
+#+title: dsp-timezone frequencyzone
+#+date: [2024-10-26 周六]
+#+last_modified:  
+
+
+timezone means a map[time=>?]
+frequencyzone means a map[frequency=>?]
+
+? can be amplitude, power or anthing else.

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       1956da09-cf41-401b-a57c-6fd3b8ec5aae
+:END:
+#+title: alg-graph-floyd
+#+date: [2024-10-26 周六]
+#+last_modified:  
+
+* Function
+Floyd is a alg to compute the shortest path of all nodes(from any node to any other node)
+
+* How do it
+- for 2D truple (i,j, w), w is the wight of path that starts from node i and end at node j
+- range nodes and range truple(i, j), treat it as mid-node of path from i to j.
+- if new wight is less than w, update w ti wight
+when range ends, the w in each truple is the wight of shortest path form node i to node j.
+
+* Why
+let us assumple that mid-node k, we find wight from node i to k and from k to j is less than old w.
+at least, wight is most litte value in mid-node 1..k(no what other path go though node k).
+  
+* Steps
+- Init
+- Range
+
+
+* Example
+
+* Extension
+** How to get every node of shortest path from node i to node j
+
+** What Complexicy of time and space in floyd alg

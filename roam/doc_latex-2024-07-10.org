@@ -14,13 +14,13 @@
 
 
 
-#+BEGIN_SRC latex-as-png :file  ../tmp/latex-c528b5c8-c027-40f2-b0a2-e8abbb1de0d6.png
+#+BEGIN_SRC tex :results file
   \[
   	a^2 + b^2 = c^2
   \]
 #+END_SRC
 
 #+RESULTS:
-[[file:/tmp/tex-c528b5c8-c027-40f2-b0a2-e8abbb1de0d6.png]]
+[[file:c:/Users/ASUS/AppData/Local/Temp/babel-JOX6c5//SvtiHU-1.png]]
 
 

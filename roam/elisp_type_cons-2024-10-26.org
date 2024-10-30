@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2af89d06-694e-40a4-9be1-a8c7afacfdb8
+:END:
+#+title: elisp-type-cons cell
+#+date: [2024-10-26 周六]
+#+last_modified:  
+
+cons cell(点对)

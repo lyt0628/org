@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       288b00c9-cdcd-406e-ae7e-caaff4e4e53c
+:END:
+#+title: alg-cg-perlin
+#+date: [2024-10-26 周六]
+#+last_modified:  
+

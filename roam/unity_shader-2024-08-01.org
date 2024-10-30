@@ -5,6 +5,29 @@
 #+date: [2024-08-01 周四]
 #+last_modified:  
 
+
+#Index
+- [[id:8272ff46-f6d2-4fd9-826e-beb38adb7b57][compiling instructions]]
+- [[id:6bf94761-cde3-4fd9-a8de-2051bfc78c29][lang-type]]
+- [[id:113c2764-7fce-4934-bf37-f16d4ee70a52][prop]]
+- [[id:0524012c-9e06-4003-8a53-e532ac62de96][lang-semantic]]
+- [[id:296a31eb-984a-45dd-9248-043c83021f26][lang-fn]]
+
+  <<pass>>
+- [[id:ccf5a75e-61aa-4a6e-a731-2efe5ee0b21d][pass]]
+- [[id:c98db2a2-34d3-4bca-a112-6e9fc5751749][tags]]
+- [[id:7fec8b33-5791-4fac-9b95-001a9b18eca7][render status]]
+- [[id:945cb6f3-e0a6-47cd-907b-9335e1448488][lib-cginc]]
+- [[id:f185844e-1de2-4e73-80aa-16c859085f80][lib-cginc-struct]]
+- [[id:4a42e38a-752c-417e-8272-2daa8333a7bd][lib-cginc-util]]
+- [[id:22f698c3-42c8-4a66-9b6c-d4287f778c13][lib-var]]
+- 
+  <<surf>>
+- [[id:e5cce548-56ce-44c1-b750-29128f61e357][surf]]
+- [[id:fa3277e5-d408-4dad-8b12-0880783ef8eb][surf-vertex modifier]]
+- [[id:e6bea271-a670-4063-818a-db58f51df3ba][surf-lighting model]]
+  
+
 Unity Contain 4 Shade Pipeline
 - Builtin(default)
 - [[id:bab164c0-dde4-4158-82e3-63e0ef2b01bd][URP]]
@@ -12,14 +35,21 @@ Unity Contain 4 Shade Pipeline
 - [[id:ef9746e4-5274-47bc-901a-8820727ac777][SRP]]
 there is no compat, only one of them can be used in a project.
 
-|----------+-----------+-------+----------+------------------------------------------------------------|
-| Caluse   | Phase     | Value | Function | Note                                                       |
-|----------+-----------+-------+----------+------------------------------------------------------------|
-| LOD      | subshader | int   |          |                                                            |
-|----------+-----------+-------+----------+------------------------------------------------------------|
-| Fallback |           |       |          | means replacement if machine cannot support this subshader |
-|          |           |       |          | usually "Diffuse"                                          |
-|----------+-----------+-------+----------+------------------------------------------------------------|
+|---------------------+-----------+-------+----------+----------------------------------------------------------------------------------------|
+| Caluse              | Phase     | Value | Function | Note                                                                                   |
+|---------------------+-----------+-------+----------+----------------------------------------------------------------------------------------|
+| LOD                 | subshader | int   |          |                                                                                        |
+|---------------------+-----------+-------+----------+----------------------------------------------------------------------------------------|
+| <var>[<_prop>]      | pass      |       |          | define variable that associated to a property,                                         |
+|                     |           |       |          | of cause, if varname == propname, association is default                               |
+|                     |           |       |          | Notice: var Color is builtin var, if you rename var as Color, it is final output color |
+|                     |           |       |          | Notice:!!! only vert-frag shader have pass                                             |
+|---------------------+-----------+-------+----------+----------------------------------------------------------------------------------------|
+| CGPROGRAM and ENDCG |           |       |          |                                                                                        |
+|---------------------+-----------+-------+----------+----------------------------------------------------------------------------------------|
+| Fallback            |           |       |          | means replacement if machine cannot support this subshader                             |
+|                     |           |       |          | usually "Diffuse"                                                                      |
+|---------------------+-----------+-------+----------+----------------------------------------------------------------------------------------|
 
 
 
@@ -68,4 +98,7 @@ SubShader
   }
 }
 #+END_SRC
-  
+
+
+
+* TODO complete report 

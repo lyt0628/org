@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1a3d3aab-7f0b-4029-aed7-2754d242e452
+:END:
+#+title: unity-shader-pass-exp-fog
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

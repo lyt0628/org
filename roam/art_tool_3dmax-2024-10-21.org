@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ed88653d-fe4b-4d8f-8771-2bd9510384c7
+:END:
+#+title: art-tool-3dmax
+#+date: [2024-10-21 周一]
+#+last_modified:  
+

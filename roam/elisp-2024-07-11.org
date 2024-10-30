@@ -9,6 +9,80 @@
 
 
 #+begin_src emacs-lisp 
+(require 'easyob)
+
+(easyob-def "666")
+
+(shell-command "echo 666")
+
+(async-shell-command "echo 666")
+
+(async-shell-command "dir")
+
+
+(sequencep echo)
+
+(easyob-def echo-555 "echo" "666")
+
+
+(easyob-call echo-555 "echo" "666")
+
+(echo-555)
+
+(easyob-format-shell-command  "echo" "666")
+
+(macroexp--expand-all
+ '(easyob-call echo "echo" "666"))
+
+(macroexp--expand-all
+ '(easyob-defsh echo-fff "echo" "666"))
+ 
+(macroexp--expand-all
+ '(easyob-defsh-async echo-fff
+ "echo" "666"))
+
+ (easyob-defexe "pl")
+
+(org-babel-execute:pl)
+
+(symbol-value easyob-defexe-exesymbol)
+
+ (fmakunbound org-babel-execute:pl)
+
+(echo-fff)
+
+(easyob-def aaa "echo $BODY"  )
+
+(macroexp--expand-all
+ '(easyob-def aaa "echo $BODY" ))
+
+
+ (easyob-def latex
+ "pdflatex -shell-escape -output-directory=$FILE_DIR  $FILE  && pdftoppm $FILE_SIMPLE.pdf -png $FILE_SIMPLE"
+ :extension ".tex"
+ :file "$FILE_SIMPLE-1.png"
+ :async nil)
+
+ 
+ (easyob-def latex "cd $FILE_DIR && pwd"
+ :extension ".tex")
+#+end_src
+
+#+RESULTS:
+
+#+BEGIN_SRC tex :results file
+$a+b$
+#+END_SRC
+
+#+RESULTS:
+[[file:c:/Users/ASUS/AppData/Local/Temp/babel-Bmejkf//WzBvWz-1.png]]
+
+
+
+
+
+#+begin_src emacs-lisp
+
   (let (
 	(abc "abc")
 	(def "def"))
@@ -18,6 +92,7 @@
 #+end_src
 
 #+RESULTS:
+: abc--def
 
 
 #+begin_src emacs-lisp :tangle yes

@@ -1,7 +1,18 @@
 :PROPERTIES:
 :ID:       428947d3-a3b4-428b-ab40-02692db02664
 :END:
-#+title: dsp-DFT
+#+title: dsp-dft
 #+date: [2024-05-25 六]
 #+last_modified: [2024-05-25 六 12:04]
 
+given a array x[n](n=[0,N])
+convert x to y[n](n=[0,N])
+
+x is a map[time=>location]
+y is a map[frequency=>amplitude]
+
+#+BEGIN_SRC latex-as-png :file  ../tmp/tex-d25ad9af-8ee7-4f51-a1b3-837f6423a4e6.png
+y[n]= PI(0, N-1)[x[n]e^(-j*2PI/N*kn)]
+#+END_SRC
+- j : imaginary unit, j^2 = - 1
+- 2PIk/N : frequency of x 

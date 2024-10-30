@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5e52aaf4-4291-42b6-8ad2-55063c22a30a
+:END:
+#+title: unity-shader-surf-exp-sss
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

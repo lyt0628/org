@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       1950de63-654a-4dac-b5ce-a342cdc091b1
+:END:
+#+title: unity-shader-imgfx-grabpass
+#+date: [2024-10-25 周五]
+#+last_modified:  
+
+GrabPass is a block, which will catch the final pixels of Object, bind it to a varialb.
+we use it in fragment handler to make some image fx

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       eac8e78d-8620-4dbb-9520-297666304281
+:END:
+#+title: unity-shader-surf-exp-rim
+#+date: [2024-10-25 周五]
+#+last_modified:  
+
+Rim is Edge light. the only question is what area is Edge.
+we say the area, whose Normal is rarely vertical to viewDir. that is Edge

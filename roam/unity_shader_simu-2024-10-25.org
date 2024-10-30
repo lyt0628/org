@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4a9936f3-4edb-47e6-a330-6f65bd72a739
+:END:
+#+title: unity-shader-simu
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

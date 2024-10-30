@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       3241bc24-e207-4693-9189-afe8736c8cf3
+:END:
+#+title: unity-shader-surf-exp-transmiss
+#+date: [2024-10-25 周五]
+#+last_modified:  
+
+Transmission is the phonomeno that light go though the object. It just like Transparent,
+we see the light, it is equal to seeing surface of object, whose color blend light and itself.
+why we do that? we can not render light directly, what we see is the surface of object. that is why
+we use color of object ot express light transmission.

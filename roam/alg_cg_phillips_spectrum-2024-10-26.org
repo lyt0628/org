@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       da277702-5927-43b4-b7f0-2051f2872f77
+:END:
+#+title: alg-cg-phillips spectrum
+#+date: [2024-10-26 周六]
+#+last_modified:  
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       cf0f868b-5c4c-4ab7-b164-61746e7ad71f
+:END:
+#+title: unity-shader-pass-exp-blend combo
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

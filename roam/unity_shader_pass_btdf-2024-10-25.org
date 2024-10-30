@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       733c666b-e386-4c65-b29a-24084a09e449
+:END:
+#+title: unity-shader-pass-btdf
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4e987dee-bec7-4542-9a8c-947a81be80e9
+:END:
+#+title: alg-cg-lod
+#+date: [2024-10-26 周六]
+#+last_modified:  
+

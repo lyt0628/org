@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       793b6b81-7bd1-4e36-99de-38419134a6bd
+:END:
+#+title: unity-analy-tmpro
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

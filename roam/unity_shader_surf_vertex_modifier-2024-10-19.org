@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       fa3277e5-d408-4dad-8b12-0880783ef8eb
+:END:
+#+title: unity-shader-surf-vertex modifier
+#+date: [2024-10-19 周六]
+#+last_modified:  
+
+#+NAME: definition
+#+BEGIN_SRC
+void vert(inout appdata_full v);
+#+END_SRC
+
+- param and output : [[id:f185844e-1de2-4e73-80aa-16c859085f80][appdata_full]]

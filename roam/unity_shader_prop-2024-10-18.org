@@ -3,5 +3,17 @@
 :END:
 #+title: unity-shader-prop
 #+date: [2024-10-18 周五]
-#+last_modified:  
+#+last_modified:
 
+|---------------------------+-------------------------------------------------------------------------------------------|
+| Property Definition       | _<Prop variable Name>("displa name",type) = <default value>{}                             |
+|                           | the same name of varialbe in pass will automaticly be assigned with the value of property |
+|---------------------------+-------------------------------------------------------------------------------------------|
+| property type             | see [[id:6bf94761-cde3-4fd9-a8de-2051bfc78c29][unity-shader-lang-type]]                                                                               |
+|---------------------------+-------------------------------------------------------------------------------------------|
+| builtin 2D property value | - "white"                                                                                 |
+|                           | - "black"                                                                                 |
+|                           | - "gray"                                                                                  |
+|                           | - "bump" : for normal texture                                                             |
+|---------------------------+-------------------------------------------------------------------------------------------|
+|

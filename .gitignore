@@ -1,3 +1,7 @@
 tmp/
-
+**/#*
+**/.#*
 org-roam.db
+
+*.aux
+*.log

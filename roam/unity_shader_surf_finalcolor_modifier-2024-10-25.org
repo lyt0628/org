@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       b708c19c-3585-4043-bce3-5c274a9048bb
+:END:
+#+title: unity-shader-surf-finalcolor modifier
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

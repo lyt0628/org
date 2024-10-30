@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ccf5a75e-61aa-4a6e-a731-2efe5ee0b21d
+:END:
+#+title: unity-shader-pass
+#+date: [2024-10-19 周六]
+#+last_modified:  
+

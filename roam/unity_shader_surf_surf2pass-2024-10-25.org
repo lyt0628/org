@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       87411097-5749-4950-b92b-35dca4c69ede
+:END:
+#+title: unity-shader-surf-surf2pass
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

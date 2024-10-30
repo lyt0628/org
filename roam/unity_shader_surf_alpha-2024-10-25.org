@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       91c51f3a-f79b-447e-895d-7c6c4540c2c2
+:END:
+#+title: unity-shader-surf-alpha
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

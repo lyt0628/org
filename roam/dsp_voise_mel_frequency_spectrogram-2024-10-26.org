@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       3e171749-bbd7-4a22-8e43-283e213bfe49
+:END:
+#+title: dsp-voise-mel frequency spectrogram
+#+date: [2024-10-26 周六]
+#+last_modified:  
+
+
+
+* Compute Mel
+1. Compute STFT(short time fourier transform)
+   - Slice voise signall(time=>amplitude), each slice between 20ms and 40ms
+   - compute the FFT of each slice.(map[f=>E])
+2. Convert f-zone to mel-zone
+   using quation that built by experience.
+   mel(f)= 2595 * lg(1+f/700)
+3. Filter(滤波器)
+

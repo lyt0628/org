@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       e6bea271-a670-4063-818a-db58f51df3ba
+:END:
+#+title: unity-shader-surf-lighting model
+#+date: [2024-10-19 周六]
+#+last_modified:  
+

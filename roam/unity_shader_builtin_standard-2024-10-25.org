@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       15f17191-8bfc-42d3-b666-06821196246e
+:END:
+#+title: unity-shader-builtin-standard
+#+date: [2024-10-25 周五]
+#+last_modified:  
+
+
+
+|----------+-------------+------+------|
+| Props    | Displayname | Type | Note |
+|----------+-------------+------+------|
+| _MainTex | Albedo      |   2D |      |
+|----------+-------------+------+------|
+|          |             |      |      |

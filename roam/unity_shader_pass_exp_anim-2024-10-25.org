@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       176f5b58-1698-4037-9d95-778fd951f6f1
+:END:
+#+title: unity-shader-pass-exp-anim
+#+date: [2024-10-25 周五]
+#+last_modified:  
+
+* Access Props of Shader at runtime

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       524c6009-fb0f-4e6a-9b29-ce0714c87645
+:END:
+#+title: unity-shader-pass-exp-wire
+#+date: [2024-10-25 周五]
+#+last_modified:  
+
+
+If UV Coord of point(in frag) close to Edge of Texture, show Edge Color.

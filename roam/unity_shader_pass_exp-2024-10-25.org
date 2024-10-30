@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       13151c57-0f30-4274-9d4c-8829d854c286
+:END:
+#+title: unity-shader-pass-exp_
+#+date: [2024-10-25 周五]
+#+last_modified:  
+

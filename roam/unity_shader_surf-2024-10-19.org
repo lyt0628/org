@@ -1,0 +1,90 @@
+:PROPERTIES:
+:ID:       e5cce548-56ce-44c1-b750-29128f61e357
+:END:
+#+title: unity-shader-surf
+#+date: [2024-10-19 周六]
+#+last_modified:  
+
+#+NAME: definition
+#+BEGIN_SRC
+void surf(Input IN,inout SurfaceOutput o);
+#+END_SRC
+A surf function defined in a CGPROGMA/ENDCG block.
+you can define multiple CG block to run more thant one time render in a Subshader
+
+- Input is a custom Struct, the fields of that is clamped
+  |--------------------+-------|
+  | Fields          | Means |
+  |--------------------+-------|
+  | uv_<texName>:f22   |       |
+  |--------------------+-------|
+  | viewDir:f3         |       |
+  |--------------------+-------|
+  | <varname>:f4:COLOR |       |
+  |--------------------+-------|
+  | screenPos:f4       |       |
+  |--------------------+-------|
+  | worldPos:f3        |       |
+  |--------------------+-------|
+  | worldRefl:f3       |       |
+  |--------------------+-------|
+  | worldNormal:f3     |       |
+  |--------------------+-------|
+  |                    |       |
+  |--------------------+-------|
+
+- Accodiante SurfaceOutput
+  #+NAME: SurfaceOutput
+  |---------------+-----------------|
+  | Fields        | Means           |
+  |---------------+-----------------|
+  | Albedo:fix3   | D               |
+  |---------------+-----------------|
+  | Normal:fix3   |                 |
+  |---------------+-----------------|
+  | Emission:fix3 |                 |
+  |---------------+-----------------|
+  | Specular:half |                 |
+  |---------------+-----------------|
+  | Gloss:fix3    | specular factor |
+  |---------------+-----------------|
+  | Alpha:fix3    |                 |
+  |---------------+-----------------|
+
+  #+NAME: SurfaceOutputStandard (matalic workflow)
+  |-----------------+-------|
+  | Fields          | Means |
+  |-----------------+-------|
+  | Albedo:fix3     |       |
+  |-----------------+-------|
+  | Normal:f3       |       |
+  |-----------------+-------|
+  | Emission:half3  |       |
+  |-----------------+-------|
+  | Matallic:half   |       |
+  |-----------------+-------|
+  | Smoothness:half |       |
+  |-----------------+-------|
+  | Occlusion:half  |       |
+  |-----------------+-------|
+  | Alpha:fixed     |       |
+  |-----------------+-------|
+
+  #+NAME: SurfaceOutputStandardSpecular
+  |-----------------+-------|
+  | Fields          | Means |
+  |-----------------+-------|
+  | Albedo:fix3     |       |
+  |-----------------+-------|
+  | Specular:fix3   |       |
+  |-----------------+-------|
+  | Normal:f3       |       |
+  |-----------------+-------|
+  | Emission:half3  |       |
+  |-----------------+-------|
+  | Smoothness:half |       |
+  |-----------------+-------|
+  | Occlusion:half  |       |
+  |-----------------+-------|
+  | Alpha:fix       |       |
+  |-----------------+-------|

@@ -14,7 +14,7 @@
 |                  |                                            | args:symbol               |     |                                                    |
 |                  |                                            | body:block                |     |                                                    |
 |------------------+--------------------------------------------+---------------------------+-----+----------------------------------------------------|
-| alias            | alias name body                            | name:symbol               |     |                                                    |
+| defalias         | defalias name body                         | name:symbol               |     |                                                    |
 |                  |                                            | body:block                |     |                                                    |
 |------------------+--------------------------------------------+---------------------------+-----+----------------------------------------------------|
 | apply-partially  | apply-partially fn args...                 |                           |     | provide fn with inadquant args as a new fn entry   |
