@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       82fad743-9a0e-4243-9256-bf34c4ca5f21
+:END:
+#+title: patt-eap-Data Transfer Object
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

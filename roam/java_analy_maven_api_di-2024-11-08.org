@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       e910db1e-8b67-4b10-9c6f-d4c1bccc16ae
+:END:
+#+title: java-analy-maven-api-di
+#+date: [2024-11-08 周五]
+#+last_modified:  
+
+This package is prepared for using [[id:af7be605-7686-4c2c-864f-3b43b903ec67][dependency inverse pattern]] instead of major bisiness code.
+api-di consists of a series of Annotation(most is just a Mark)
+
+
+To see [[id:b5569bb2-4201-451b-b324-5b703232d347][java-analy-maven-impl-di]] for impletion part.

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       ff73ec85-2a80-4471-b520-a1458fc20eb0
+:END:
+#+title: elisp-lib-compile_
+#+date: [2024-11-04 周一]
+#+last_modified:  
+
+
+compile function  run the custom variable `ccompile-command` as default to build
+project. eval the following code to see the value of `compile-comand`.
+#+BEGIN_SRC elisp
+compile-command
+#+EnD_SRC
+
+#+RESULTS:
+: make -k 
+
+
+`compile-hostory` stores the command that previously executed, which will become next default command.

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       03cd7f54-a852-4a6b-89e2-747ac06c4a1d
+:END:
+#+title: patt-eap-Domain Model
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

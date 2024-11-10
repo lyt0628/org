@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7d0c4bfc-f143-4c47-b2b5-62de232344f3
+:END:
+#+title: patt-eap-Mapper
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

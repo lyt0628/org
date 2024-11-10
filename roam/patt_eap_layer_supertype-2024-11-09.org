@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       9d6ec468-d536-46c7-a5f3-f7c30399ae02
+:END:
+#+title: patt-eap-Layer Supertype
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

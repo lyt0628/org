@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       67346ae1-c93d-486e-9764-fccd20c4bb3e
+:END:
+#+title: patt-eap-Class Table Inheritance
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

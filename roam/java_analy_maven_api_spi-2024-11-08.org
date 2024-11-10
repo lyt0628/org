@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       6c6fd181-7b09-41ce-98dc-bb9ccbf1deb6
+:END:
+#+title: java-analy-maven-api-spi
+#+date: [2024-11-08 周五]
+#+last_modified:  
+
+Before read this note, you should know [[id:ed5bd798-4068-4d7c-8c29-de3b6fc6ea6e][java-lang-spi]].
+you should see the *Extensible Components and SPI preparetion* part of [[id:45a88058-1b13-4725-a5ef-abee92c5802c][api-core]].
+
+
+

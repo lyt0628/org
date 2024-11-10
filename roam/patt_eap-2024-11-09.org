@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d6cdfba9-0f0c-4729-9f3f-ba01a1eb4e64
+:END:
+#+title: patt-eap
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

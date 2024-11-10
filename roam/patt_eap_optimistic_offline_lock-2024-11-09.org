@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ccc9b10e-7435-46c8-bcc6-7121f3f29b93
+:END:
+#+title: patt-eap-Optimistic offline Lock
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

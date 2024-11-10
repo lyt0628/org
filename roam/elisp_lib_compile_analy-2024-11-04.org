@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       3488ee32-3312-4311-bd31-644d537d346f
+:END:
+#+title: elisp-lib-compile-analy
+#+date: [2024-11-04 周一]
+#+last_modified:  
+
+
+`compile` has three parts.
+1. `read-shell-command` to get build command from user
+
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4d61ba77-242a-4bd3-8f56-30b3ba230556
+:END:
+#+title: patt-eap-Page Controller
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

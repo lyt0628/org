@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       3aa7e012-93a5-41c5-bab6-778333bfb597
+:END:
+#+title: patt-eap-Dependent Mapping
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

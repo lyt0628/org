@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       af7be605-7686-4c2c-864f-3b43b903ec67
+:END:
+#+title: patt-dep inverse
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

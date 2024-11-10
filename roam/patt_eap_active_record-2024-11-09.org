@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d38f0708-b784-4299-bc35-7d24c9079896
+:END:
+#+title: patt-eap-Active Record
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

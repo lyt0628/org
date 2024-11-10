@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5ba27b19-2480-4a7e-8303-abbb3d2e81cf
+:END:
+#+title: patt-eap-Application Controller
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

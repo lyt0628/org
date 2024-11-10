@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       7311e931-8e6a-4307-b898-ef45766c6ad4
+:END:
+#+title: patt-eap-Remote Facade
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       a96067bb-a299-4db7-b420-3dae426ecb3b
+:END:
+#+title: elisp-lang-docstr
+#+date: [2024-11-04 周一]
+#+last_modified:  
+
+
+- \\[<fnname>] : render as the hotkey of fn
+- `<fn>` : render <code> as link, which link to the fn 

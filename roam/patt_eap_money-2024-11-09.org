@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       5cf11956-1aca-418b-aa9c-474b28f0fe9b
+:END:
+#+title: patt-eap-Money
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

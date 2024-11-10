@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c900431f-58d5-4546-81c9-48d3a555aa33
+:END:
+#+title: java-lang-anno-RetentionPolicy(E)
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d784915b-8d41-4229-8c15-71abcc299b01
+:END:
+#+title: java-analy-maven-deps
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

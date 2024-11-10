@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d058f0ca-0b9d-48fa-8dc6-19ac1c4cb949
+:END:
+#+title: patt-eap-Identity Map
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

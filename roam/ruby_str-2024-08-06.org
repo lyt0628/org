@@ -12,6 +12,9 @@ puts a
 # puts b
 #+END_SRC
 
+#+RESULTS:
+: my age is 20
+
 
 
 #+BEGIN_SRC ruby :noweb yes :results output

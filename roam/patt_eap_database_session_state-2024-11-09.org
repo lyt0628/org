@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8727988c-b749-4178-a1b2-2fd267ce61f3
+:END:
+#+title: patt-eap-Database Session State
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

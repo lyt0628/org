@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       77c9eba6-1761-42c9-9875-6a52c8810cf2
+:END:
+#+title: patt-eap-Coarse_Grained Lock
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

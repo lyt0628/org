@@ -1,0 +1,100 @@
+:PROPERTIES:
+:ID:       9a836700-874a-46c8-a199-e822178cc89f
+:END:
+#+title: java-analy-maven-api-model
+#+date: [2024-11-08 周五]
+#+last_modified:
+
+* The Components Of api-model Package 
+This module is prepared for File Debug(e.g. print lineNumber),
+which consists of 3 components
+
+#+BEGIN_SRC plantuml :file ../tmp/puml-e460245d-ce26-4704-905d-0120eb80f371.png
+  class "input_source(data)" as src{
+  modelId :str
+  location :str
+  inputs :input_sources[]
+  importedFrom :input_location
+  }
+  class "input_location" as loc{
+  source :input_source
+  }
+  interface "input_location_tracker" as tc
+
+  loc <-> src
+  loc --> tc
+#+END_SRC 
+
+#+RESULTS:
+[[file:../tmp/puml-e460245d-ce26-4704-905d-0120eb80f371.png]]
+
+Data class is a data class(known as pojo in java).
+Is is easy to fingure out that *input_source use [[id:4d3ef6cb-28ff-4858-8760-0a7ee2959e0b][heriachy pattern]].*
+prop inputs is the link to child nodes.
+
+with the prop name input_location, we find  input_source and input_location hold
+two-way reference. usually, it just defined for simple access.
+
+So, The core prop of input_source is *modelId and location*.
+
+with the subfix id, prop modelId may a identifier,
+but location can be be figured out still.
+to see it late.
+
+we dig in input_location
+
+* InputLocation
+** Domain Props
+   #+BEGIN_SRC plantuml :file ../tmp/puml-e40245d-ce26-4704-905d-0120eb80f371.png
+   class "InputLocation" as loc {
+   line_number, column_number :int
+   == multi fork Tree ==
+   locations :map[obj=>input_location]
+   inputed_from :InputLocation
+   }
+   #+END_SRC
+
+
+   It is easy to find InputLocation use tree datatype.
+   So the domin-related props just line number and col number.
+   InputLocation is a data class too.
+
+** Static Utils
+   
+   #+BEGIN_SRC plantuml :file ../tmp/puml-e40245d-ce26-4704-95d-0120eb80f371.png
+   class "InputLocation" as loc {
+   static merge(target, source:InputLocation, indices: int[]): InputLocation
+   }
+   #+END_SRC
+
+   #+RESULTS:
+   [[file:../tmp/puml-e40245d-ce26-4704-95d-0120eb80f371.png]]
+
+   indcies is a collection of index of source or target,
+   native number means the index is for source(need ~ operation to get real index).
+   and range indices to get items for prop locations of source and target,
+   and put it into new inputLocation.locations, and return new one.
+   #+NAME: Fake Code for InputLocation::merge
+   #+BEGIN_SRC python :eval no
+   new_input_location 
+   range indices as i:
+   _ if i < 0:
+   _   new_input_location.locations += source[~i]
+   _ else:
+   _   new_input_location.locations += target[i]
+   return new_input_location
+   #+END_SRC
+   
+   Now, i still have no idea how model to execute logic.
+   i tar view rest interface InputLocationTracker
+   
+   #+BEGIN_SRC plantuml
+   interface InputLocationTracker{
+   get_location:(field:Object)=>InputLocation
+   getImportedFrom():InputLocation
+   }
+   #+END_SRC
+   it is too easy that no extra information provided.
+
+   We should see bisiness part code to get information to understand the logic.
+   

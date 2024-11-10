@@ -5,3 +5,13 @@
 #+date: [2024-07-10 三]
 #+last_modified: [2024-07-10 三 21:47]
 
+
+* DFF
+#+BEGIN_SRC tex :results file
+$ X(k)=\sum_{n=0}^{N-1} x(n)e^{-j\frac{2\pi}{N}kn} $
+
+$ x(n)=\frac{1}{M} \sum_{k=0}^{N-1} X(k)e^{j\frac{2/pi}{N}kn} $
+#+END_SRC
+
+#+RESULTS:
+[[file:c:/Users/ASUS/AppData/Local/Temp/babel-T0lPvE//IRPN24-1.png]]

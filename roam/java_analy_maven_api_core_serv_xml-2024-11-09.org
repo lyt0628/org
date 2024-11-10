@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       104ac591-524f-4086-ab57-52a88dc2bcae
+:END:
+#+title: java-analy-maven-api-core-serv-xml
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

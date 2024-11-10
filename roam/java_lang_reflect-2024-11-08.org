@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6f90a6b0-c547-40bc-975c-d1e0eeacfa00
+:END:
+#+title: java-lang-reflect
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

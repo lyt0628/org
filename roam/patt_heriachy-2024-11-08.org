@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       4d3ef6cb-28ff-4858-8760-0a7ee2959e0b
+:END:
+#+title: patt-heriachy
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

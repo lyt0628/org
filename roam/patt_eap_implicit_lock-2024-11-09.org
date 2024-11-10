@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       402affcb-5e2e-44b8-8803-4c8ad5d2ce51
+:END:
+#+title: patt-eap-Implicit Lock
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

@@ -1,0 +1,274 @@
+:PROPERTIES:
+:ID:       45a88058-1b13-4725-a5ef-abee92c5802c
+:END:
+#+title: java-analy-maven-api-core
+#+date: [2024-11-08 周五]
+#+last_modified:  
+
+* Domain Model
+This module define the most common Maven concept, e.g. lifecicle, dep-coord, artiface, project, scope, repository...
+Most is simple and just for data model.
+#+NAME: Common concepts of Maven
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| Concept               | Note                                                                                                |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Artifact]]              | the Unit project you can import by Maven, defined with a pom file                                   |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[ArtifactCoordinates]]   | a string to identify a artifact with format: <group_name>:<artifact_name>:<version>                 |
+|                       | This definition is part of [[Artifact]]                                                                 |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Dependency]]            | the artifact that you project depends on.                                                           |
+|                       | with some extra dependency information.                                                             |
+|                       | Dependency is a Artifact                                                                            |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[DependencyCoordinates]] | ArtifactCoordinates is used for indetifing a artifact, but provide information                      |
+|                       | to decide how to resolve the dependency                                                             |
+|                       | DependencyCoordiantes is a ArtifactCoordinates.                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[DownloadedArtifact]]    | the Artifact that was download at local maven repo                                                  |
+|                       | hold extra field to reference downloaded package.                                                   |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[DownloadedDependency]]  | combo of DownloadedArtifact and Dependency,                                                         |
+|                       | used for dep domain.                                                                                |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[DependencyScope(E)]]    | when to hold the dependency(some deps just used for dev)                                            |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Exclusion]]             | Maven will find dep of dep. Sometime, you want stop some artifact that are not you directly dep on. |
+|                       | Exclusion is used for it.                                                                           |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[ProducedArtifact]]      |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Version]]               |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[VersionConstraint]]     |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[VersionRange]]          |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Language]]              | Maven is not just build for java,                                                                   |
+|                       | here is where to add support to ohter langugage.                                                    |
+|                       | Maven define a [[ExtensibleEnum]] for SPI to add more function by add more enum and more impletion,     |
+|                       | This Interface is one of that.                                                                      |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Packaging]]             |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Lifecycle]]             |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Repository]]            |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[LocalRepository]]       |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[RemoteRepository]]      |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Plugin]]                |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[MojoExecution]]         | plugins can be run by mvn command, this if domain-concept of the plugin execution                   |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Project]]               |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[ProjectScope]]          |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Session]]               | session is a process to do a service like install, deploy, or resolve deps                          |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Service]]               |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[ServiceData]]           |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+| [[Toolchain]]             | a execution to do task, like javac to compile .java file, java to run .class files or jar           |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+|                       |                                                                                                     |
+|-----------------------+-----------------------------------------------------------------------------------------------------|
+
+
+
+
+
+#+NAME: Artifact
+#+BEGIN_SRC plantuml :file ../tmp/puml-c0d7310b-112c-4c54-8e5b-9945f0352ee1.png
+interface Artifact{
+==get==
+groupId, artifactId, version:str
+baseVersion: Version
+classifer, extension :str 
+==simple==
+key():str
+isSnapshot():bool
+toCoordinates():ArtifactCoordinates
+}
+#+END_SRC
+
+#+RESULTS: Artifact
+[[file:../tmp/puml-c0d7310b-112c-4c54-8e5b-9945f0352ee1.png]]
+
+A Maven Artifact Key format is:
+#+HEADER: :var groupId="icu.lyt0628"
+#+HEADER: :var artifactId="demoprj"
+#+HEADER: :var extension="jar"
+#+HEADER: :var classifier="snapshot"
+#+HEADER: :var version="3.9.9"
+#+BEGIN_SRC python
+return groupId +':'+ artifactId + ':'+extension + ':'+classifier + ':'+version
+#+END_SRC
+
+#+RESULTS:
+: icu.lyt0628:demoprj:jar:snapshot:3.9.9
+
+
+
+#+NAME: ArtifactCoordinates
+#+BEGIN_SRC plantuml :file ../tmp/puml-c0d7310b-112c-4c54-8e5b-9945f0352ee1.png
+interface ArtifactCoodinates{
+==get==
+groupId, artifactId:str
+classifer, extension :str 
+==simple==
+getId():str
+}
+#+END_SRC
+
+#+RESULTS: ArtifactCoordinates
+[[file:../tmp/puml-c0d7310b-112c-4c54-8e5b-9945f0352ee1.png]]
+
+id is the same as key() in [[Artifact]]
+
+
+
+
+#+NAME: Dependency
+#+BEGIN_SRC plantuml :file ../tmp/puml-c0d310b-112c-4c54-8e5b-9945f0352ee1.png
+interface Dependency{
+==get==
+type:Type
+scope:DependencyScopre
+optional:bool
+==Simple==
+toCoordinates():DependencyCoordinates
+}
+interface Artifact
+Artifact <|-- Dependency 
+#+END_SRC
+
+#+RESULTS: Dependency
+[[file:../tmp/puml-0d310b-112c-4c54-8e5b-9945f0352ee1.png]]
+
+- type of dependency, e.g. jar package, modular-jar(java9)
+
+
+#+NAME: DependencyCoordinates
+#+BEGIN_SRC plantuml :file ../tmp/puml-0d310b-112c-4c54-8e5b-9945f0352ee1.png
+interface DependencyCoordinates{
+==get==
+type:Type
+scope:DependencyScopre
+optional:bool
+exlusions:Coll<Exclusion>
+}
+interface ArtifactCoordinates
+ArtifactCoordinates <|-- DependencyCoordinates
+#+END_SRC
+
+#+RESULTS: DependencyCoordinates
+[[file:../tmp/puml-0d310b-112c-4c54-8e5b-9945f0352ee1.png]]
+
+#+NAME: DependencyScope(E)
+#+BEGIN_SRC plantuml :file ../tmp/puml-18cc0de8-535b-42df-aac9-be9427a32762.png
+enum DependencyScope {
+none
+undefined
+compile_only
+compile
+provided
+test-only
+test
+test_runtime
+system
+}
+#+END_SRC
+
+#+RESULTS: DependencyScope(E)
+[[file:../tmp/puml-18cc0de8-535b-42df-aac9-be9427a32762.png]]
+
+- none : no dep, for demo or refactor properse
+- undefined: no explicity given, default is compile
+- compile_only
+- compile: compile, runtime, test
+- runtime: runtime , test,
+- provided:
+- test: test compile and test runtime
+- test_runtime: test runtime
+- system
+
+
+runtime means the dep will be packaged as jar or war to run,
+compile the deps will be compiled as class file for reference.
+test is used for junit like compiled execution, assemble the release.
+provided and system still unknown.
+
+
+#+NAME: DownloadedArtifact
+#+BEGIN_SRC plantuml :file ../tmp/puml-5fbadfd3-3c80-45fa-aa36-7e7f9d879cbe.png
+interface DownloadedArtifact {
+==get==
+path():Path
+}
+interface Artifact
+Artifact <|-- DownloadedArtifact
+#+END_SRC
+
+#+RESULTS: DownloadedArtifact
+[[file:../tmp/puml-5fbadfd3-3c80-45fa-aa36-7e7f9d879cbe.png]]
+
+
+#+NAME: Exclusion
+#+BEGIN_SRC plantuml :file ../tmp/puml-5fadfd3-3c80-45fa-aa36-7e7f9d879cbe.png
+interface Exclusion {
+==get==
+groupId, artifactId:str
+}
+#+END_SRC
+
+#+RESULTS: Exclusion
+[[file:../tmp/puml-5fadfd3-3c80-45fa-aa36-7e7f9d879cbe.png]]
+
+
+
+* Pattern(Listener) based Compoents 
+
+   
+* Graph Component For supporting Reloving Deps
+
+
+
+* Extensible Components and SPI preparetion
+ExtensibleEnum is a entry for SPI to provide advice to maven.
+ExtensibleEnum is simple
+a field(string type) to indetify a enum.
+
+We Cannot get more information from this interface.
+
+All Sub Type of ExtensibleEnum are defined in abstrac class ExtensibleEnums
+this is the fixed part of maven.
+#+BEGIN_SRC plantuml :file ../tmp/1cf563ce-4529-4a9f-bda3-8d1fbd13a160.png
+abstract ExtensibleEnums{
+language()
+pathScope()
+projectScopr()
+}
+class DefaultExtensibleEnum {
+--get--
+id()
+--pojo record--
+hashCode()
+equals()
+toString()
+}
+#+END_SRC
+
+#+RESULTS:
+[[file:../tmp/1cf563ce-4529-4a9f-bda3-8d1fbd13a160.png]]
+
+
+Logic of the code is
+1. A DefaultExtensibleEnum complete the pojo definition(id, hasCode, equals and toString)
+2. some doamin-related interface(most are definition for a data model) combined with the DefaultExtensibleEnum to provide Extensible Domain enum
+3. finally the api(e.g. language(), pathScope()...) to provide default enum.
+   

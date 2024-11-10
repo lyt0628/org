@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2eaaf252-a192-4fda-a86f-e8c742d130b2
+:END:
+#+title: patt-eap-Identity Field
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

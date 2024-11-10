@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8a6569c1-487e-4e48-83f5-efa6efc08c04
+:END:
+#+title: patt-eap-Data Mapper
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

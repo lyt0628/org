@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       68172ee3-d729-4c91-b1d2-519ab861cfb8
+:END:
+#+title: patt-eap-Plugin
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       fe08e34e-98f1-4b2e-add8-757a014c85ae
+:END:
+#+title: patt-eap-Enterprise Integration 
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

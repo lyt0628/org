@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6a266de0-e72a-4f21-bf32-413d0a55acc5
+:END:
+#+title: patt-eap-Sparated Interface
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

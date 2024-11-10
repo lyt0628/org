@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       9679c91e-b9c2-45bc-aabc-a811783181f5
+:END:
+#+title: java-lang-anno-ElementType(E)
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

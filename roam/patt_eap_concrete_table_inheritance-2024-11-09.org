@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c82f9b96-1b54-41b5-8da5-c34dee06bda9
+:END:
+#+title: patt-eap-Concrete Table Inheritance
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

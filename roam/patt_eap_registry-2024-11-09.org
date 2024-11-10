@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1cda3388-ecb2-42b1-b82f-cc25ddd20daf
+:END:
+#+title: patt-eap-Registry
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

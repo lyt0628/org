@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       2ce37f95-1457-4bdd-9164-c52d570ad212
+:END:
+#+title: patt-eap-Embedded Value
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

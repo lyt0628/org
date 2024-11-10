@@ -1,0 +1,39 @@
+:PROPERTIES:
+:ID:       216997d0-9c87-4ac3-a5ce-668916ba9bc7
+:END:
+#+title: java-analy-maven-api-meta
+#+date: [2024-11-08 周五]
+#+last_modified:  
+
+
+With the principle that least deps part fist, we think api-meta module should be the fist part we inspect in.
+api-meta mudule is very easy, which just *has 1 package and 10 Annotation definition.*
+The annotations have no relations to each other, so we look at the java file in order.
+- @Config
+  There is no comments for it, awful.
+  #+BEGIN_SRC plantuml :file ../tmp/puml-e460245d-ce26-4704-905d-0120eb80f371.png
+  annotation Config {
+  source : Source(enum)
+  -- enum Source --
+  user_properties
+  mode
+  ==
+  type :str ="java.lang.String"
+  default_value :str
+  read_only :bool =false
+  }
+  #+END_SRC 
+
+  #+RESULTS:
+  [[file:../tmp/puml-e460245d-ce26-4704-905d-0120eb80f371.png]]
+
+  Major props are source and type, put it to see late.
+
+- @Consumer(TYPE|PACKAGE) : Mark annotion  
+
+- @Experimental : Mark annottion for Class
+
+- @Generated : Mark annotation for Class
+
+- @Immutable : Mark annotaion for Class
+

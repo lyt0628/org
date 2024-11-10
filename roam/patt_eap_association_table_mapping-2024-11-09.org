@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8b8d3c7d-209c-4e4f-9556-7ad68a7e1edd
+:END:
+#+title: patt-eap-Association Table Mapping
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

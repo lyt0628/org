@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       d0c6ea3a-c865-47ac-9b72-045ceecd0ec2
+:END:
+#+title: patt-eap-Row Data Gateway
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

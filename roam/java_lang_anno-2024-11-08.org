@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       5a786e2e-50e1-47d8-847a-71e5b00eb049
+:END:
+#+title: java-lang-anno
+#+date: [2024-11-08 周五]
+#+last_modified:  
+
+Anotation is a mark to part of codes, which can carries with some extra information.
+Annotations usually used with [[id:6f90a6b0-c547-40bc-975c-d1e0eeacfa00][java-lang-reflect]], helping reflect code to position at a specific part of codes.
+
+Annotion have 4 parts:
+- @Retension: A JDK builtin annotation to mark a custom annotaion for when(defined in [[id:c900431f-58d5-4546-81c9-48d3a555aa33][java-lang-anno-RetentionPolicy(E)]]) to hold the Annotation(some annotaions is marked for dev, which is no need to compile). 
+- @Documented: A JDK builtin annotation, which mark annotation class to indicate javadoc to package this annotation definition to javadoc
+- @Target: A JDK builltin annotation to indicate where can the custom annotation  marks, The positions were defined in [[id:9679c91e-b9c2-45bc-aabc-a811783181f5][ElementType(E)]]
+
+
+

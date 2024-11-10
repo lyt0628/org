@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       c85c9f33-ca02-43ac-a2fb-336ccb3f07ab
+:END:
+#+title: patt-eap-Gateway
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

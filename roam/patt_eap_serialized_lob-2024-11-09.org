@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       1da87385-8538-43db-810b-a7daf6eca5c8
+:END:
+#+title: patt-eap-Serialized LOB
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

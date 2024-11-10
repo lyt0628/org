@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       f2432d29-0ef1-49b8-8cfa-531c91160eff
+:END:
+#+title: patt-eap-Record Set
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       cb9f57e5-4bb1-4ee7-b70b-80f1510150d9
+:END:
+#+title: java-analy-maven-api-core-serv
+#+date: [2024-11-09 周六]
+#+last_modified:  
+
+
+The api-core.services package is not a domain definition,
+but he impletion logic component definitions.
+In this part, how to complete task(service) is the most impotant point.
+
+We should devide the servive into some detailed proccess for understanding.
+

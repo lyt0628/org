@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3658e1ad-957b-40fd-b064-c81d47b32dae
+:END:
+#+title: java-analy-maven-impl
+#+date: [2024-11-09 周六]
+#+last_modified:  
+
+I wourld talk all the details of impl, but the import part and design principle will be discussed.

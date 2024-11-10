@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       ed5bd798-4068-4d7c-8c29-de3b6fc6ea6e
+:END:
+#+title: java-lang-spi
+#+date: [2024-11-08 周五]
+#+last_modified:  
+

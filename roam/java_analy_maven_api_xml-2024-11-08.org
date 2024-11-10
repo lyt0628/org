@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       3a51c0e5-271f-441f-9488-4ef64eb9c101
+:END:
+#+title: java-analy-maven-api-xml
+#+date: [2024-11-08 周五]
+#+last_modified:  
+
+This module just contains a domain-related model class XmlNode
+Variouts Xml parsers maybe have the same definition. 
+  #+BEGIN_SRC plantuml :file ../tmp/puml-e460245d-ce26-4704-905d-0120eb80f371.png
+  class XmlNode {
+  ==get==
+  name
+  namespace_uri
+  prefix
+  value
+  attributes
+  attribute
+  children
+  child
+  input_location
+  --
+  merge : (source:XmlNode, child_merge_override:bool=false)=>XmlNode
+  -- Static Utils --
+  merge (dominat, recessive :Xml_Node, child_merge_override=false)
+  }
+  #+END_SRC 
+
+  #+RESULTS:
+  [[file:../tmp/puml-e460245d-ce26-4704-905d-0120eb80f371.png]]
+
+  Only one point needs to describe, the impl of static merge() is just easy delegate to domaint.merge().

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a8dfe349-6548-4c74-b09d-33c0ae539ced
+:END:
+#+title: patt-eap-Foreign Key Mapping
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       8879d295-80f1-448d-838d-5bc460381f9b
+:END:
+#+title: patt-eap-Metadata Mapping
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

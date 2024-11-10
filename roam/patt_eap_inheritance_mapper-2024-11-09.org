@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       6140fa53-ff39-478c-ae3a-80a506f024c3
+:END:
+#+title: patt-eap-Inheritance Mapper
+#+date: [2024-11-09 周六]
+#+last_modified:  
+

@@ -3,5 +3,31 @@
 :END:
 #+title: java-analy-maven
 #+date: [2024-08-29 Thu]
-#+last_modified:  
+#+last_modified:
+
+
+
+* The Structure Of Maven
+  Maven uses maven-module to devele itself, conaining *4 major modules maven-api, maven-api-impl,maven-conpat, and maven-core.*
+  Ohter modules, most of is a integration for other tools e.g. slf4j. see [[id:d784915b-8d41-4229-8c15-71abcc299b01][java-analy-maven-deps modules]] for more infomations.
+
+  The api and api-impl modules is the most important codes, where maven run its work.
+  compat modules for compat old version, and *the core module is the frontend of maven, which provides interface to call maven to run.*
+
+
+* The Api module of Maven
+  With no deps block in bom file, we are convirned that api modules if the most internal codes of Maven.
+  And we find *api module have 10 modules for 10 part definition.*
+  - [[id:216997d0-9c87-4ac3-a5ce-668916ba9bc7][api-meta]]
+  - [[id:9a836700-874a-46c8-a199-e822178cc89f][api-model]]
+  - [[id:3a51c0e5-271f-441f-9488-4ef64eb9c101][api-xml]]
+  - [[id:e910db1e-8b67-4b10-9c6f-d4c1bccc16ae][api-di]]
+  - [[id:6c6fd181-7b09-41ce-98dc-bb9ccbf1deb6][api-spi]]
+  - [[id:45a88058-1b13-4725-a5ef-abee92c5802c][api-core]]
+
+
+  The Rest module with no java code with  mdo files and package-info(what function  of mdo)
+  - api-plugin
+  - api-settings
+  - api-toolchain
 
